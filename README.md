@@ -21,3 +21,5 @@ The goal of this project is to identify the extreme points of two fingers from a
   After the identification of the extreme points from a single frame, it will be tested if it is workable on a live camera. Based on the movement of those points, possible algorithms will be devised so that they could be mapped in order to make an object draggable on screen.
 
 </ul>
+
+<h3> The approach has been followed on 'key-points-indentification.ipynb' </h3>
