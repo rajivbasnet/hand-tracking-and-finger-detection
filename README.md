@@ -14,7 +14,7 @@ The goal of this project is to identify the extreme points of two fingers from a
 
 <li> <b> Key Points Identification and Tracking </b> </li> </br>
 
-  After the classification, I will proceed with the recognition process by working with the concavexity defects.
+  After the classification, I will proceed with the recognition process by working with the convexity defects.
 
 <li> <b> Algorithm Design to Map the Recognition to Executable Functions </b> </li> </br>
 
