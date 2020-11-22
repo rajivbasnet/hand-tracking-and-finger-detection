@@ -24,12 +24,12 @@ def get_contours(img):
 
 def main():
     myCam = cv2.VideoCapture(0)
-    frameBlank = np.zeros((500, 500, 3), dtype=np.uint8)
+    frameBlank = np.zeros((1000, 1000, 3), dtype=np.uint8)
 
     while True:
         ret, frameCap = myCam.read()
         frameCap = cv2.flip(frameCap, 1)
-        frameCap = cv2.resize(frameCap, (500, 500))
+        frameCap = cv2.resize(frameCap, (1000, 1000))
 
         ycr_image = cv2.cvtColor(frameCap, cv2.COLOR_BGR2YCR_CB)
         mask = get_mask(ycr_image)
@@ -49,7 +49,7 @@ def main():
 
         # cv2.circle(frameCap, extLeft, 8, (0, 0, 255), -1)
         # cv2.circle(frameCap, extRight, 8, (0, 255, 0), -1)
-        cv2.circle(frameCap, extTop, 5, (255, 0, 0), -1)
+        cv2.circle(frameCap, extTop, 5, (0, 0, 0), -1)
         cv2.circle(frameBlank, extTop, 8, (255, 255, 255), -1)
         
         frameMerged = cv2.add(frameCap, frameBlank)
